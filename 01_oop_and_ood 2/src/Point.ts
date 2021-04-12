@@ -18,7 +18,7 @@ export class Point {
   }
 
   public distance();
-  public distance(x?: Point);
+  public distance(x: Point);
   public distance(x: number | Point, y: number)
   public distance(x?: number | Point, y?: number) {
     if (typeof x === 'number' && y) {
