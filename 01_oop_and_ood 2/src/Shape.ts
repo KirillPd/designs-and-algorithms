@@ -1,5 +1,7 @@
 import { Point } from './Point';
 
+const DEFAULT_POINT_COLOR = 'green'
+
 export abstract class Shape {
   abstract getType(): string;
 
@@ -15,7 +17,7 @@ export abstract class Shape {
     }
 
     this.points = points;
-    this.color = color ? color : 'green';
+    this.color = color || DEFAULT_POINT_COLOR;
     this.filled = typeof filled === 'boolean' ? filled : true;
   }
 
